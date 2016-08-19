@@ -78,6 +78,7 @@ var Game = function(elem, modelPath) {
     alpha: true
   });
   this.renderer.setClearColor(0xffffff, 0);
+  this.renderer.setPixelRatio(window.devicePixelRatio? window.devicePixelRatio : 1);
   this.elem.append(this.renderer.domElement);
 
   // モデルローダー
