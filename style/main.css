@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  background-color: #383838;
+}
+
+#view3d {
+  width: 80vw;
+  height: 100vh;
+}
+
+#controller {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 100vh;
+}
+
+@media screen and ( max-width: 80vh ) {
+  #view3d {
+    width: 100vw;
+    height: 80vh;
+  }
+  #controller {
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+  }
+}

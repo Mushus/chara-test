@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>3DモデルのUVいじって表情変更サンプル</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div id="view3d">
+  </div>
+  <div id="controller">
+    <button type="button" class="emote" onclick="game.chara.emotion.change('eye', 0)">目0</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('eye', 1)">目1</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('eye', 2)">目2</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('eye', 3)">目3</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('mouth', 0)">口0</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('mouth', 1)">口1</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('cheek', 0)">頬0</button>
+    <button type="button" class="emote" onclick="game.chara.emotion.change('cheek', 1)">頬1</button>
+  </div>
+  <script src="script/lib/jquery-3.1.0.min.js"></script>
+  <script src="script/lib/three.js"></script>
+  <script src="script/game.js"></script>
+  <script>
+    var game;
+    $(function() {
+      game = new Game('#view3d', './models/chara/model.json');
+
+      $(window).resize(function() { game.updateSize() });
+    });
+  </script>
+</body>
+</html>
