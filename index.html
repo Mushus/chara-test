@@ -27,6 +27,7 @@
     $(function() {
       game = new Game('#view3d', './models/chara/model.json');
       $(window).resize(function() { game.updateSize() });
+      var touchController = new DragController('#view3d', game.camera, new THREE.Vector3(0, .8, 0));
     });
   </script>
 </body>

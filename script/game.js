@@ -62,8 +62,8 @@ var Game = function(elem, modelPath) {
 
   // カメラ
   this.camera = new THREE.PerspectiveCamera(45, 1, 1, 1000);
-  this.camera.position.set(0, .8, 4);
-  this.camera.lookAt(new THREE.Vector3(0, .8, 4));
+  this.camera.position.set(0, .8, 3);
+  this.camera.lookAt(new THREE.Vector3(0, .8, 0));
   this.scene.add(this.camera);
 
   // ライト
@@ -128,5 +128,72 @@ Game.prototype = {
     this.camera.updateProjectionMatrix();
 
     this.renderer.setSize(this.screen.width, this.screen.height);
+  }
+};
+
+var DragController = function(elem, camera, lookAt) {
+  this.camera = camera;
+  this.lookAt = lookAt;
+  this.speed = 0.3;
+
+  this.dragX = 0;
+  this.dragY = 0;
+  this.cameraLength = 3;
+  this.pitch = 0;
+  this.yaw = 0;
+
+  var self = this;
+
+  this.mouseDown = false;
+  $(elem).on('mousedown', function(e) {
+    self.mouseDown = true;
+    self.dragStart(e.pageX, e.pageY);
+    e.preventDefault();
+  });
+  $(document).on('mouseup', function(e) {
+    self.mouseDown = false;
+    e.preventDefault();
+  });
+  $(document).on('mousemove', function(e) {
+    if (self.mouseDown) {
+      self.dragMove(e.pageX, e.pageY);
+      e.preventDefault();
+    }
+  });
+  $(elem).on('touchstart', function(e) {
+    var touch = e.targetTouches[0];
+    self.dragStart(touch.pageX, touch.pageY);
+    e.preventDefault();
+  });
+  $(elem).on('touchmove', function(e) {
+    if (e.targetTouches.length == 1) {
+      var touch = e.targetTouches[0];
+      self.dragMove(touch.pageX, touch.pageY);
+      e.preventDefault();
+    }
+  });
+};
+
+DragController.prototype = {
+  dragStart: function(x, y) {
+    this.dragX = x;
+    this.dragY = y;
+  },
+  dragMove: function(x, y) {
+    var deltaX = (x - this.dragX) * this.speed;
+    var deltaY = (y - this.dragY) * this.speed;
+    this.dragX = x;
+    this.dragY = y;
+
+    this.pitch -= deltaX / 180 * Math.PI;
+    this.yaw += deltaY / 180 * Math.PI;
+
+    if (this.yaw < -70 / 180 * Math.PI) this.yaw = -70 / 180 * Math.PI;
+    if (this.yaw > 70 / 180 * Math.PI) this.yaw = 70 / 180 * Math.PI
+
+    this.camera.position.y = this.lookAt.y + Math.sin(this.yaw) * this.cameraLength
+    this.camera.position.x = this.lookAt.x + Math.sin(this.pitch) * Math.cos(this.yaw) * this.cameraLength;
+    this.camera.position.z = this.lookAt.z + Math.cos(this.pitch) * Math.cos(this.yaw)* this.cameraLength;
+    this.camera.lookAt(this.lookAt);
   }
 };
