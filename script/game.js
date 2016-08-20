@@ -1,11 +1,44 @@
 "use strict";
 
 var Chara = function(mesh) {
+  var self = this;
+
   this.mesh = mesh;
   this.emotion = new Emotion(mesh.material);
+  this.mixer = new THREE.AnimationMixer(mesh);
+  this.state = new StateMachine(this);
+  this._ready = null;
+  var materials = mesh.material.materials;
+  for(var i in materials) {
+    materials[i].skinning = true;
+  }
+
+  this.watchImages();
 }
 
 Chara.prototype = {
+  moveChange: function(actionName) {
+    var animations = this.mesh.geometry.animations;
+    for(var i in animations) {
+      this.mixer.clipAction(animations[i]).setEffectiveWeight(0).stop();
+    }
+    this.mixer.clipAction(actionName).setEffectiveWeight(1).play(0);
+  },
+  ready: function(func) {
+    this._ready = func;
+  },
+  watchImages: function() {
+    var self = this;
+    var materials = this.mesh.material.materials;
+    for(var i in materials) {
+      var image = materials[i].map.image;
+      if (image == null) {
+        setTimeout(function() { self.watchImages(); });
+        return;
+      }
+    }
+    if (self._ready) self._ready.call(self);
+  }
 };
 
 var Emotion = function(material) {
@@ -43,8 +76,22 @@ Emotion.prototype = {
     emotionInfo.texture.offset.y = posY;
   }
 };
+var StateMachine = function(target) {
+  this.states = [];
+  this.target = target;
+}
 
-
+StateMachine.prototype = {
+  register: function(name, func) {
+    this.states[name] = {
+      func: func
+    };
+  },
+  change: function(name) {
+    var state = this.states[name];
+    state.func.call(this, this, this.target);
+  }
+};
 
 var Game = function(elem, modelPath) {
   var self = this;
@@ -57,12 +104,14 @@ var Game = function(elem, modelPath) {
     height: 0
   };
 
+  this.clock = new THREE.Clock();
+
   // シーン
   this.scene = new THREE.Scene();
 
   // カメラ
   this.camera = new THREE.PerspectiveCamera(45, 1, 1, 1000);
-  this.camera.position.set(0, .8, 3);
+  this.camera.position.set(0, .8, 3.5);
   this.camera.lookAt(new THREE.Vector3(0, .8, 0));
   this.scene.add(this.camera);
 
@@ -94,6 +143,10 @@ var Game = function(elem, modelPath) {
 Game.prototype = {
   // レンダリングループ
   rendering: function() {
+    var delta = this.clock.getDelta();
+    if (this.chara) {
+      this.chara.mixer.update(delta);
+    }
     this.renderer.render(this.scene, this.camera);
 
     var self = this;
@@ -106,18 +159,24 @@ Game.prototype = {
     this.scene.add(mesh);
 
     var chara = new Chara(mesh);
-    chara.emotion.register("mouth", 120 / 512, 80 / 512);
-    chara.emotion.register("eye", 100 / 512, 100 / 512);
-    chara.emotion.register("cheek", 160 / 512, 160 / 512);
+
+    chara.emotion.register('mouth', 120 / 512, 80 / 512);
+    chara.emotion.register('eye', 100 / 512, 100 / 512);
+    chara.emotion.register('cheek', 160 / 512, 160 / 512);
+
+    chara.state.register('idle', function(state, self) {
+      self.moveChange('idle');
+    });
+    chara.state.register('shake_hand', function(state, self) {
+      self.moveChange('shake_hand');
+      setTimeout(function() { state.change('idle'); }, 33 * 1000 / 24);
+    });
+
+    chara.ready(function() {
+      this.state.change('shake_hand');
+    });
 
     return chara;
-  },
-
-  changeFaceOffset: function(x, y) {
-    var texture = this.chara.material.materials[1].map;
-    var uvOffset = texture.offset;
-    uvOffset.x = x;
-    uvOffset.y = y;
   },
 
   updateSize: function() {
@@ -138,7 +197,7 @@ var DragController = function(elem, camera, lookAt) {
 
   this.dragX = 0;
   this.dragY = 0;
-  this.cameraLength = 3;
+  this.cameraLength = 3.5;
   this.pitch = 0;
   this.yaw = 0;
 

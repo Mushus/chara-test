@@ -248,9 +248,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.0920696"
-     inkscape:cx="38.6497"
-     inkscape:cy="475.9512"
+     inkscape:zoom="6.1841392"
+     inkscape:cx="190.33332"
+     inkscape:cy="462.36523"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -333,253 +333,258 @@
        id="path4191"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
+    <path
+       style="fill:#a35d69;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 241.2616,531.18602 3.65894,0 c 11.20552,0 19.20946,-0.45736 21.95366,-2.05815 -0.45736,13.03499 -4.11631,30.41497 -21.72497,30.41497 -17.60867,0 -3.88763,-28.35682 -3.88763,-28.35682 z"
+       id="path4192"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:label="レイヤー 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-540.36216)"
-     style="display:none;opacity:0.24125875"
+     style="display:inline;opacity:0.24125875"
      sodipodi:insensitive="true">
     <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
        xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
-       preserveAspectRatio="none"
+       style="display:inline"
+       y="540.36218"
+       x="0"
        id="image4640"
-       x="0"
-       y="540.36218"
-       style="display:inline" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="540.36218"
+       x="120"
        id="image4640-7"
-       x="120"
-       y="540.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="540.36218"
+       x="240"
        id="image4640-7-9"
-       x="240"
-       y="540.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="540.36218"
+       x="360"
        id="image4640-7-1"
-       x="360"
-       y="540.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="620.36218"
+       x="0"
        id="image4640-70"
-       x="0"
-       y="620.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="620.36218"
+       x="120"
        id="image4640-7-17"
-       x="120"
-       y="620.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="620.36218"
+       x="240"
        id="image4640-7-9-3"
-       x="240"
-       y="620.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="620.36218"
+       x="360"
        id="image4640-7-1-1"
-       x="360"
-       y="620.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="700.36218"
+       x="0"
        id="image4640-70-1"
-       x="0"
-       y="700.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="700.36218"
+       x="120"
        id="image4640-7-17-4"
-       x="120"
-       y="700.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="700.36218"
+       x="240"
        id="image4640-7-9-3-7"
-       x="240"
-       y="700.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="700.36218"
+       x="360"
        id="image4640-7-1-1-9"
-       x="360"
-       y="700.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="780.36218"
+       x="0"
        id="image4640-70-0"
-       x="0"
-       y="780.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="780.36218"
+       x="120"
        id="image4640-7-17-6"
-       x="120"
-       y="780.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="780.36218"
+       x="240"
        id="image4640-7-9-3-4"
-       x="240"
-       y="780.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="780.36218"
+       x="360"
        id="image4640-7-1-1-1"
-       x="360"
-       y="780.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="860.36218"
+       x="0"
        id="image4640-70-8"
-       x="0"
-       y="860.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="860.36218"
+       x="120"
        id="image4640-7-17-7"
-       x="120"
-       y="860.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="860.36218"
+       x="240"
        id="image4640-7-9-3-8"
-       x="240"
-       y="860.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="860.36218"
+       x="360"
        id="image4640-7-1-1-7"
-       x="360"
-       y="860.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
        preserveAspectRatio="none"
-       id="image4640-70-18"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="940.36218"
        x="0"
-       y="940.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
+       id="image4640-70-18"
        preserveAspectRatio="none"
-       id="image4640-7-17-0"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="940.36218"
        x="120"
-       y="940.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
+       id="image4640-7-17-0"
        preserveAspectRatio="none"
-       id="image4640-7-9-3-9"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
+       y="940.36218"
        x="240"
-       y="940.36218"
-       style="display:inline;opacity:1" />
-    <image
-       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\..\tex_mouth_template.png"
-       xlink:href="..\tex_mouth_template.png"
-       width="512"
-       height="512"
+       id="image4640-7-9-3-9"
        preserveAspectRatio="none"
-       id="image4640-7-1-1-0"
-       x="360"
+       height="512"
+       width="512" />
+    <image
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\textures\..\tex_mouth_template.png"
+       xlink:href="..\tex_mouth_template.png"
+       style="display:inline;opacity:1"
        y="940.36218"
-       style="display:inline;opacity:1" />
+       x="360"
+       id="image4640-7-1-1-0"
+       preserveAspectRatio="none"
+       height="512"
+       width="512" />
   </g>
 </svg>
