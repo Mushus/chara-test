@@ -6,10 +6,10 @@ var Chara = function(mesh) {
   this.mesh = mesh;
   this.emotion = new Emotion(mesh.material);
   this.mixer = new THREE.AnimationMixer(mesh);
-  this.state = new StateMachine(this);
+  this.state = new CharaState(this);
   this._ready = null;
   var materials = mesh.material.materials;
-  for(var i in materials) {
+  for (var i in materials) {
     materials[i].skinning = true;
   }
 
@@ -19,7 +19,7 @@ var Chara = function(mesh) {
 Chara.prototype = {
   moveChange: function(actionName) {
     var animations = this.mesh.geometry.animations;
-    for(var i in animations) {
+    for (var i in animations) {
       this.mixer.clipAction(animations[i]).setEffectiveWeight(0).stop();
     }
     this.mixer.clipAction(actionName).setEffectiveWeight(1).play(0);
@@ -30,7 +30,7 @@ Chara.prototype = {
   watchImages: function() {
     var self = this;
     var materials = this.mesh.material.materials;
-    for(var i in materials) {
+    for (var i in materials) {
       var image = materials[i].map.image;
       if (image == null) {
         setTimeout(function() { self.watchImages(); });
@@ -38,6 +38,10 @@ Chara.prototype = {
       }
     }
     if (self._ready) self._ready.call(self);
+  },
+  update: function(delta) {
+    this.state.update(delta);
+    this.mixer.update(delta);
   }
 };
 
@@ -50,7 +54,7 @@ Emotion.prototype = {
   /** 表情情報登録 */
   register: function(name, offsetX, offsetY) {
     var materials = this.material.materials;
-    for(var i in materials) {
+    for (var i in materials) {
       if (materials[i].name == name) {
         this.emotions[name] = {
           x: offsetX,
@@ -65,33 +69,67 @@ Emotion.prototype = {
   change: function(name, num) {
     var emotionInfo = this.emotions[name];
     var posX = 0, posY = 0;
-    for(var i = 0; i < num; i ++) {
+    for (var i = 0; i < num; i ++) {
       posX += emotionInfo.x;
       if (posX + emotionInfo.x >= 1) {
         posX = 0;
         posY -= emotionInfo.y;
       }
     }
-    console.log(posX);
-    console.log(posY);
     emotionInfo.texture.offset.x = posX;
     emotionInfo.texture.offset.y = posY;
   }
 };
-var StateMachine = function(target) {
+var CharaState = function(target) {
+  this.state = null;
   this.states = [];
   this.target = target;
+  this.timers = [];
+  this.elapsedTime = 0;
 }
 
-StateMachine.prototype = {
+CharaState.prototype = {
   register: function(name, func) {
     this.states[name] = {
       func: func
     };
   },
   change: function(name) {
-    var state = this.states[name];
-    state.func.call(this, this, this.target);
+    this.timers = [];
+    this.elapsedTime = 0;
+
+    this.state = this.states[name];
+    this.state.func.call(this, this.target);
+  },
+  timer: function(time, func) {
+    var setTime = time + this.elapsedTime;
+
+    // 小さい順に入れる
+    var idx;
+    for (idx = 0; idx < this.timers.length; idx++) {
+      if (this.timers[idx].time > setTime) {
+        break;
+      }
+    }
+    this.timers.splice(idx, 0, {
+      time: setTime,
+      func: func
+    });
+  },
+  update: function(delta) {
+    var state = this.state;
+    this.elapsedTime += delta;
+
+    for (var i = 0; i < this.timers.length; idx++) {
+      if (this.timers[i].time > this.elapsedTime) {
+        break;
+      } else {
+        this.timers[i].func.call(this, this.target);
+        if (this.state != state) {
+          break;
+        }
+      }
+    }
   }
 };
 
@@ -147,7 +185,7 @@ Game.prototype = {
   rendering: function() {
     var delta = this.clock.getDelta();
     if (this.chara) {
-      this.chara.mixer.update(delta);
+      this.chara.update(delta);
     }
     this.renderer.render(this.scene, this.camera);
 
@@ -166,12 +204,14 @@ Game.prototype = {
     chara.emotion.register('eye', 100 / 512, 100 / 512);
     chara.emotion.register('cheek', 160 / 512, 160 / 512);
 
-    chara.state.register('idle', function(state, self) {
-      self.moveChange('idle');
+    chara.state.register('idle', function(chara) {
+      chara.moveChange('idle');
     });
-    chara.state.register('shake_hand', function(state, self) {
-      self.moveChange('shake_hand');
-      setTimeout(function() { state.change('idle'); }, 33 * 1000 / 24);
+    chara.state.register('shake_hand', function(chara) {
+      chara.moveChange('shake_hand');
+      this.timer(33 / 24, function() {
+        this.change('idle');
+      });
     });
 
     chara.ready(function() {

@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="eye.svg"
-   inkscape:export-filename="C:\Users\wyndf\OneDrive\ドキュメント\chara2\work\textures\eye.png"
+   inkscape:export-filename="..\textures\eye.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -751,9 +751,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.5460348"
-     inkscape:cx="239.43665"
-     inkscape:cy="324.41704"
+     inkscape:zoom="1.0932117"
+     inkscape:cx="195.30987"
+     inkscape:cy="284.4381"
      inkscape:document-units="px"
      inkscape:current-layer="g4216-7-3"
      showgrid="false"
@@ -1089,7 +1089,7 @@
       <path
          id="path5081-5"
          transform="translate(0,512)"
-         d="m 34.856213,54.396216 c -17.236897,-4.3e-5 4.922138,20.606367 4.923084,32.484643 0.0063,0.30358 0.02193,0.607033 0.04687,0.910157 l 62.304683,0 c 0.0315,-0.303028 0.0536,-0.606482 0.0664,-0.910157 C 102.1982,75.002583 86.624374,57.597748 69.387478,57.597792 Z"
+         d="m 42.618005,66.362311 c -17.236897,-4.3e-5 -2.839654,8.640272 -2.838708,20.518548 0.0063,0.30358 0.02193,0.607033 0.04687,0.910157 l 62.304683,0 c 0.0315,-0.303028 0.0536,-0.606482 0.0664,-0.910157 C 102.1982,75.002583 85.977558,60.185012 68.740662,60.185056 Z"
          style="fill:#ffffff;fill-opacity:1;stroke:#b4b4c8;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccccc" />
@@ -1097,7 +1097,7 @@
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
          id="path5083-2"
-         d="m 4.4405691,577.1046 c 12.4178859,-2.69955 16.9482729,-9.88489 29.9401949,-8.37191 l 20.776574,-1.88908 c 11.756957,-2.81057 22.973089,21.5567 26.655394,13.48264 l 21.589048,20.45121 -98.4023891,2.74421 z"
+         d="m 15.113033,591.33455 c 12.417885,-2.69955 12.420561,-10.85511 25.412483,-9.34213 l 15.278638,-4.15294 c 11.756957,-2.81057 17.151745,-0.11163 26.008578,2.48677 l 21.589048,20.45121 -98.4023891,2.74421 z"
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="cccccccc"
@@ -1109,13 +1109,13 @@
          sodipodi:nodetypes="cccccsc"
          inkscape:connector-curvature="0"
          id="path4871-6"
-         d="m 13.269167,568.10103 c 0,0 -8.4078545,-0.32574 -9.8044875,-2.10178 -0.2793339,7.69619 5.9617011,11.76846 5.9617011,11.76846 6.2848484,-2.81208 20.7155864,-7.75856 34.8199774,-8.38106 15.409989,-0.0157 33.097803,0.65934 42.457633,5.62414 -8.433139,-17.99273 -27.390205,-18.52587 -40.32431,-16.7709 -17.213539,2.33563 -28.968532,9.15268 -33.110514,9.86114 z"
+         d="m 18.538371,583.00537 c 0,0 -8.406144,0.36723 -9.9441889,-1.28786 0.3549221,7.69308 6.9098919,11.23797 6.9098919,11.23797 6.032132,-3.31971 20.00689,-9.4369 34.012222,-11.21792 15.356434,-1.28371 33.03981,-2.06646 42.776442,2.11129 -9.885134,-17.23776 -28.82178,-16.20914 -41.567605,-13.39579 -16.962965,3.74418 -28.117126,11.50541 -32.186762,12.55231 z"
          style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccsc"
          inkscape:connector-curvature="0"
          id="path4875-7"
-         d="m 59.374367,559.72897 c 8.829242,-3.39922 15.413196,-6.44349 17.148294,-8.91168 -0.443853,7.04953 -2.921663,11.10541 -5.901788,11.89217 8.773976,-2.83176 10.675463,-4.82846 11.957518,-5.81119 -2.061778,5.2346 -5.531945,10.17098 -7.892645,9.94377 -2.360665,-0.22723 -15.311379,-7.11307 -15.311379,-7.11307 z"
+         d="m 63.798282,570.86777 c 8.519581,-4.11424 14.830697,-7.68997 16.356807,-10.29257 0.137746,7.06215 -1.997906,11.30817 -4.903183,12.33749 8.511198,-3.54415 10.241931,-5.69055 11.43877,-6.77545 -1.624038,5.38651 -4.676228,10.5917 -7.047618,10.55952 -2.371357,-0.0322 -15.844776,-5.82899 -15.844776,-5.82899 z"
          style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="cc"
@@ -1138,7 +1138,7 @@
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
          id="path5083-7-6"
-         d="m 4.4405691,577.1046 c 4.8752727,-11.42426 13.6163699,-7.58096 25.1378319,-5.6277 l 31.524721,6.11486 c 15.4159,-5.32609 10.624154,-1.3117 20.70961,2.73449 l 21.589048,20.45121 -98.4023891,2.74421 z"
+         d="m 22.927525,585.75815 c 14.937367,-3.42032 7.707033,-2.42269 19.228495,-0.46943 15.200175,2.26385 19.27051,-3.16925 19.27051,-3.16925 15.4159,-5.32609 10.300746,-5.83941 20.386202,-1.79322 l 21.589048,20.45121 -98.4023891,2.74421 c 3.551591,-7.23761 10.0621141,-15.38785 17.9281341,-17.76352 z"
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="cccccccc"
@@ -1156,7 +1156,7 @@
          sodipodi:nodetypes="cccccsc"
          inkscape:connector-curvature="0"
          id="path4871-6-6"
-         d="m 16.940417,571.03479 c 0,0 -8.4078544,0.32574 -9.8044874,2.10178 -0.279334,-7.69619 5.9617014,-11.76846 5.9617014,-11.76846 6.284848,2.81208 20.715586,7.75856 34.819977,8.38106 15.409989,0.0157 33.097801,-0.65934 42.457631,-5.62414 -8.43314,17.99273 -27.390203,18.52587 -40.324308,16.7709 -17.213539,-2.33563 -28.968532,-9.15268 -33.110514,-9.86114 z"
+         d="m 21.914635,586.72046 c 0,0 -8.178694,1.97663 -9.197847,3.99312 -1.790865,-7.49013 3.525034,-12.7127 3.525034,-12.7127 6.71584,1.51809 21.838472,3.52306 35.78885,1.3532 15.110754,-3.0221 32.318491,-7.17038 40.516067,-13.88271 -4.721105,19.302 -23.201161,23.56135 -36.227437,24.39028 -17.336207,1.10319 -30.204301,-3.26307 -34.404667,-3.14119 z"
          style="display:inline;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccsc"
@@ -3112,6 +3112,37 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-540.36216)"
-     style="display:inline;opacity:0.444"
-     sodipodi:insensitive="true" />
+     style="display:none;opacity:0.444"
+     sodipodi:insensitive="true">
+    <image
+       style="display:inline"
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\tex_eye_template.png"
+       y="540.36218"
+       x="-2.7441406e-006"
+       id="image4760"
+       xlink:href="file:///C:/Users/wyndf/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/chara-test/work/tex_eye_template.png"
+       preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       style="display:inline"
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\tex_eye_template.png"
+       y="640.36212"
+       x="-2.7441406e-006"
+       id="image4760-1"
+       xlink:href="file:///C:/Users/wyndf/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/chara-test/work/tex_eye_template.png"
+       preserveAspectRatio="none"
+       height="512"
+       width="512" />
+    <image
+       style="display:inline;opacity:1"
+       sodipodi:absref="C:\Users\wyndf\OneDrive\ドキュメント\chara-test\work\tex_eye_template.png"
+       y="640.36212"
+       x="100"
+       id="image4760-1-4"
+       xlink:href="file:///C:/Users/wyndf/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/chara-test/work/tex_eye_template.png"
+       preserveAspectRatio="none"
+       height="512"
+       width="512" />
+  </g>
 </svg>
