@@ -8,11 +8,11 @@ var Chara = function(mesh) {
   this.mixer = new THREE.AnimationMixer(mesh);
   this.state = new CharaState(this);
   this._ready = null;
+  this.move = null;
   var materials = mesh.material.materials;
   for (var i in materials) {
     materials[i].skinning = true;
   }
-
   this.watchImages();
 }
 
@@ -20,9 +20,19 @@ Chara.prototype = {
   moveChange: function(actionName) {
     var animations = this.mesh.geometry.animations;
     for (var i in animations) {
-      this.mixer.clipAction(animations[i]).setEffectiveWeight(0).stop();
+      this.mixer.clipAction(animations[i]).setEffectiveWeight(1).stop();
     }
     this.mixer.clipAction(actionName).setEffectiveWeight(1).play(0);
+    this.move = actionName;
+  },
+  moveClossfade: function(toActionName, duration) {
+    var animations = this.mesh.geometry.animations;
+    var fromAction = this.mixer.clipAction(this.move)
+    var toAction = this.mixer.clipAction(toActionName);
+    toAction.play(0);
+    fromAction.crossFadeTo(toAction, duration);
+
+    this.move = toActionName;
   },
   ready: function(func) {
     this._ready = func;
@@ -120,13 +130,16 @@ CharaState.prototype = {
     var state = this.state;
     this.elapsedTime += delta;
 
-    for (var i = 0; i < this.timers.length; idx++) {
+    for (var i = 0; i < this.timers.length; i++) {
       if (this.timers[i].time > this.elapsedTime) {
         break;
       } else {
         this.timers[i].func.call(this, this.target);
         if (this.state != state) {
           break;
+        } else {
+          this.timers.shift();
+          i--;
         }
       }
     }
@@ -205,10 +218,16 @@ Game.prototype = {
     chara.emotion.register('cheek', 160 / 512, 160 / 512);
 
     chara.state.register('idle', function(chara) {
-      chara.moveChange('idle');
+      if (chara.move != 'idle') {
+        console.log(chara.move)
+        chara.moveChange('idle');
+      }
     });
     chara.state.register('shake_hand', function(chara) {
       chara.moveChange('shake_hand');
+      this.timer(25 / 24, function() {
+        chara.moveClossfade('idle', 8/33);
+      });
       this.timer(33 / 24, function() {
         this.change('idle');
       });
