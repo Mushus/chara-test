@@ -67,11 +67,13 @@ Emotion.prototype = {
     var posX = 0, posY = 0;
     for(var i = 0; i < num; i ++) {
       posX += emotionInfo.x;
-      if (posX >= 1) {
+      if (posX + emotionInfo.x >= 1) {
         posX = 0;
-        posY += emotionInfo.y;
+        posY -= emotionInfo.y;
       }
     }
+    console.log(posX);
+    console.log(posY);
     emotionInfo.texture.offset.x = posX;
     emotionInfo.texture.offset.y = posY;
   }
