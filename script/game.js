@@ -232,6 +232,15 @@ Game.prototype = {
         this.change('idle');
       });
     });
+    chara.state.register('dislike', function(chara) {
+      chara.moveChange('dislike');
+      this.timer(42 / 24, function() {
+        chara.moveClossfade('idle', 8/50);
+      });
+      this.timer(50 / 24, function() {
+        this.change('idle');
+      });
+    });
 
     chara.ready(function() {
       this.state.change('shake_hand');
