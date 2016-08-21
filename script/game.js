@@ -250,6 +250,15 @@ Game.prototype = {
         this.change('idle');
       });
     });
+    chara.state.register('huh', function(chara) {
+      chara.moveChange('huh');
+      this.timer(40 / 24, function() {
+        chara.moveClossfade('idle', 15/55);
+      });
+      this.timer(55 / 24, function() {
+        this.change('idle');
+      });
+    });
 
     chara.ready(function() {
       this.state.change('shake_hand');
