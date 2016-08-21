@@ -232,12 +232,21 @@ Game.prototype = {
         this.change('idle');
       });
     });
-    chara.state.register('dislike', function(chara) {
-      chara.moveChange('dislike');
+    chara.state.register('nono', function(chara) {
+      chara.moveChange('nono');
       this.timer(42 / 24, function() {
         chara.moveClossfade('idle', 8/50);
       });
       this.timer(50 / 24, function() {
+        this.change('idle');
+      });
+    });
+    chara.state.register('yeah', function(chara) {
+      chara.moveChange('yeah');
+      this.timer(36 / 24, function() {
+        chara.moveClossfade('idle', 8/44);
+      });
+      this.timer(44 / 24, function() {
         this.change('idle');
       });
     });
