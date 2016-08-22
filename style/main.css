@@ -34,8 +34,28 @@ html {
   right: 0;
   width: 20vw;
   height: 100vh;
-  overflow-y: auto;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
+}
+
+#controller::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+#controller::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.emote {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border: 0;
+  border-radius: 4px;
 }
 
 @media screen and ( max-width: 80vh ) {
