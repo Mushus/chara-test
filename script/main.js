@@ -75,6 +75,7 @@
 
       // 読み込み終わったら手を振る
       chara.ready = function() {
+        $('#view3d .nowloaing').hide();
         this.state.change('shake_hand');
       };
 
