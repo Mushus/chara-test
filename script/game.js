@@ -204,7 +204,7 @@
 
     // カメラ
     this.camera = new THREE.PerspectiveCamera(45, 1, 1, 1000);
-    this.camera.position.set(0, .8, 3.5);
+    this.camera.position.set(0, .8, 3);
     this.camera.lookAt(new THREE.Vector3(0, .8, 0));
     this.scene.add(this.camera);
 
@@ -265,7 +265,7 @@
 
     this.dragX = 0;
     this.dragY = 0;
-    this.cameraLength = 3.5;
+    this.cameraLength = 3;
     this.pitch = 0;
     this.yaw = 0;
 

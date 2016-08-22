@@ -38,16 +38,6 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
-#controller::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-}
-#controller::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
-
 .emote {
   background-color: #fff;
   color: #000;
@@ -61,13 +51,13 @@ html {
 @media screen and ( max-width: 80vh ) {
   #view3d {
     width: 100vw;
-    height: 80vh;
+    height: 65vh;
   }
   #controller {
     position: absolute;
-    top: 80vh;
+    top: 65vh;
     left: 0;
     width: 100vw;
-    height: 20vh;
+    height: 35vh;
   }
 }
